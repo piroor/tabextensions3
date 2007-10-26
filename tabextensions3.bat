@@ -32,6 +32,8 @@ copy d:\data\codes\viewsourceintab\viewsourceintab_noupdate.xpi .\
 
 chmod -cfr 644 *.rdf *.xpi
 zip -9 "..\%appname%_noupdate.xpi" *.rdf *.xpi
+del "o:\xul\xpi\%appname%_noupdate.xpi"
+mv ..\%appname%_noupdate.xpi o:\xul\xpi\
 
 cd ..
 rm -r xpi_temp
