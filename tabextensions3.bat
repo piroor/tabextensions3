@@ -1,8 +1,8 @@
 setlocal
 set appname=%~n0
 
-d:
-cd d:\data\codes\%appname%
+c:
+cd c:\Users\Public\data\codes\%appname%
 
 
 del "*.xpi"
@@ -25,10 +25,10 @@ mv ..\%appname%.xpi o:\xul\xpi\
 
 del "*.xpi"
 
-copy d:\data\codes\multipletab\multipletab_noupdate.xpi .\
-copy d:\data\codes\informationaltab\informationaltab_noupdate.xpi .\
-copy d:\data\codes\treestyletab\treestyletab_noupdate.xpi .\
-copy d:\data\codes\viewsourceintab\viewsourceintab_noupdate.xpi .\
+copy c:\Users\Public\data\codes\multipletab\multipletab_noupdate.xpi .\
+copy c:\Users\Public\data\codes\informationaltab\informationaltab_noupdate.xpi .\
+copy c:\Users\Public\data\codes\treestyletab\treestyletab_noupdate.xpi .\
+copy c:\Users\Public\data\codes\viewsourceintab\viewsourceintab_noupdate.xpi .\
 
 chmod -cfr 644 *.rdf *.xpi
 zip -9 "..\%appname%_noupdate.xpi" *.rdf *.xpi
